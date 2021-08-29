@@ -1,0 +1,83 @@
+<div style="min-width: 1024px; max-width: 1240px;margin: 0 auto;">
+<div class="container">
+    <app-site-bar>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                                (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+            <mat-panel-title>
+                Price
+            </mat-panel-title>
+            </mat-expansion-panel-header>
+            <section class="example-section">
+                <mat-checkbox class="example-margin">Strong drinks</mat-checkbox>
+                <mat-checkbox class="example-margin">Wine & Sparkling Wine</mat-checkbox>
+            </section>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                                (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+            <mat-panel-title>
+                Category
+            </mat-panel-title>
+            </mat-expansion-panel-header>
+            <section class="example-section">
+                <mat-checkbox class="example-margin"></mat-checkbox>
+                <mat-checkbox class="example-margin">Wine & Sparkling Wine</mat-checkbox>
+            </section>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                                (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+            <mat-panel-title>
+                Brand
+            </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>I'm visible because I am open B)</p>
+        </mat-expansion-panel>
+    </app-site-bar>
+    <div class="products-container">
+        <ul class="products clearfix">
+            <li class="product-wrapper">
+              <div class="product">
+                  <app-default-card></app-default-card>
+              </div>
+            </li>
+            <li class="product-wrapper">
+                <div class="product">
+                    <app-default-card></app-default-card>
+                </div>
+              </li>
+              <li class="product-wrapper">
+                <div class="product">
+                    <app-default-card></app-default-card>
+                </div>
+              </li>
+              <li class="product-wrapper">
+                <div class="product">
+                    <app-default-card></app-default-card>
+                </div>
+              </li>
+              <li class="product-wrapper">
+                <div class="product">
+                    <app-default-card></app-default-card>
+                </div>
+              </li>
+              <li class="product-wrapper">
+                <div class="product">
+                    <app-default-card></app-default-card>
+                </div>
+              </li>
+              <li class="product-wrapper">
+                <div class="product">
+                    <app-default-card></app-default-card>
+                </div>
+              </li>
+              <li class="product-wrapper">
+                <div class="product">
+                    <app-default-card></app-default-card>
+                </div>
+              </li>
+        </ul>
+    </div>
+</div>
+</div>

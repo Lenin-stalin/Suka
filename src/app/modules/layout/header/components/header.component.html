@@ -1,0 +1,19 @@
+<header class="header">
+  <div class="header-container">
+    <div class="fixed-header">
+      <div class="logo-search">
+        <img [src]="logo">
+        <app-input icon="search" id="search" placeholder="Input..." [(ngModel)]="query">
+        </app-input>
+      </div>
+      <div class="buttons">
+        <app-default-button>lala</app-default-button>
+        <app-default-button>haha</app-default-button>
+        <app-default-button>Log In</app-default-button>
+      </div>
+    </div>
+    <div class="categories-navigation">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</header>

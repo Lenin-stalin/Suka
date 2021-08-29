@@ -1,0 +1,11 @@
+<div class="wrapper">
+    <app-header>
+        <nz-tabset nzLinkRouter nzCentered>
+            <nz-tab 
+                *ngFor="let tab of tabs"
+                [nzDisabled]="tab.disabled"
+            ><a *nzTabLink nz-tab-link [routerLink]="tab.router">{{ tab.name }}</a></nz-tab>
+        </nz-tabset>
+    </app-header>
+</div>
+<router-outlet></router-outlet>
